@@ -1,0 +1,132 @@
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(teste1.gif);
+  background-color: cover; /* Corrected typo for full background coverage */
+  background-position: center;
+}
+
+/* Buttons */
+button {
+  width: 70px;
+  height: 30px;
+  background: #ffff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjusted opacity for subtle shadow */
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+}
+
+button:hover > i {
+  color: #000000;
+}
+
+button i {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  pointer-events: none;
+}
+
+/* Inputs and selects */
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Hidden class correction */
+.hide {
+  display: none; /* Corrected typo for hidden elements */
+}
+
+/* Container */
+.container {
+  width: 420px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #ffff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+/* Container header correction and margin adjustment */
+.container header {
+  display: flex;
+  justify-content: space-around; /* Align header text to left */
+  font-size: 15px;
+  margin: 7px 0; /* Removed unnecessary repetition */
+  padding: 19px 0;
+}
+
+/* Form styles */
+.container form {
+  accent-color: #ffff;
+  margin-right: 9px;
+  border-radius: 10px;
+}
+
+/* Input styling adjustment (optional) */
+form-control input {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Edit input styling adjustment (optional) */
+#edit-input {
+  width: 200px;
+  height: 30px;
+  background: #ffff;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px; /* Adjusted font size for consistency (optional) */
+}
+
+/* Edit form styles for spacing */
+.container form#edit-form {
+  display: contents;
+  justify-content: center; /* Distribute elements horizontally */
+  align-items: center;
+}
+
+.container form#edit-form p {
+  margin-right: 10px; /* Adjust spacing between text and button */
+}
+
+.container #cancel-edit-btn{
+    margin-top:9px;
+
+}
+
+.container input{
+        width: 200px;
+        height: 30px; 
+        border: none; 
+        border-radius: 25px;
+        background-color: #fff; 
+        padding: 10px 20px; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
